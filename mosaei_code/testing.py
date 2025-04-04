@@ -3,7 +3,7 @@ from free_range_zoo.wrappers.action_task import action_mapping_wrapper_v0
 import torch
 import pickle
 
-with open('C:/Users/varun/Desktop/free_range_zoo/competition_configs/wildfire/WS2.pkl','rb') as f:
+with open('competition_configs/wildfire/WS2.pkl','rb') as f:
     wildfire_configuration = pickle.load(f)
 
 env = wildfire_v0.parallel_env(
@@ -50,7 +50,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the CSV file
-csv_path = "C:/Users/varun/Desktop/free-range-zoo/test_logging/0.csv"  
+csv_path = "test_logging/0.csv"  
 df = pd.read_csv(csv_path)
 
 # Convert rewards to numeric (in case of NULLs or strings)
